@@ -1,0 +1,152 @@
+:root {
+  --blue-primary: hsl(223, 87%, 63%);
+  --blue-hover: hsl(223, 87%, 45%);
+  --blue-focus: hsl(223, 87%, 35%);
+
+  --pale-blue-secondary: hsl(223, 100%, 88%);
+  --light-red-secondary: hsl(354, 100%, 66%);
+
+  --gray-neutral: hsl(0, 0%, 59%);
+  --very-dark-blue-neutral: hsl(209, 33%, 12%);
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+*:focus {
+  outline: none;
+  outline: 2px solid var(--blue-focus);
+}
+
+.header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 2.4rem;
+}
+
+main .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 2.8rem;
+}
+
+main > .info > h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--gray-neutral);
+
+  margin-bottom: 1.6rem;
+}
+
+main > .info > h1 > span {
+  font-weight: 700;
+  color: var(--very-dark-blue-neutral);
+}
+
+main > .info > p {
+  font-size: 1.2rem;
+  color: var(--very-dark-blue-neutral);
+}
+
+main > .formSection {
+  width: 88%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .formSection > form {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+
+  padding: 3rem;
+  border: 1px solid var(--pale-blue-secondary);
+  border-radius: 12px;
+}
+
+.invalid {
+  outline: 2px solid red;
+}
+
+main > .formSection > .subscribed {
+  display: block;
+  text-align: center;
+  line-height: 2.1rem;
+}
+
+main > .formSection > .subscribed {
+  padding: 3rem;
+  border: 1px solid var(--pale-blue-secondary);
+  border-radius: 12px;
+}
+
+main > .formSection > .subscribed > h2 {
+  font-weight: 300;
+  margin-bottom: 1.3rem;
+}
+
+main > .formSection > .subscribed > h2 > span {
+  font-weight: 600;
+}
+
+main > section > img {
+  width: 100%;
+
+  margin-top: 6.6rem;
+}
+
+.footerMain {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  main > .info > h1 {
+    font-size: 4rem;
+  }
+
+  main > .info > p {
+    font-size: 1.6rem;
+  }
+
+  main > .formSection {
+    width: 65rem;
+  }
+
+  main > .formSection > form {
+    display: grtd;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  main > section > img {
+    width: 67rem;
+  }
+}

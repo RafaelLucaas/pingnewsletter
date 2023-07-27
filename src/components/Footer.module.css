@@ -1,0 +1,70 @@
+:root {
+  --blue-primary: hsl(223, 87%, 63%);
+  --blue-hover: hsl(223, 87%, 45%);
+  --blue-focus: hsl(223, 87%, 35%);
+
+  --pale-blue-secondary: hsl(223, 100%, 88%);
+  --light-red-secondary: hsl(354, 100%, 66%);
+
+  --gray-neutral: hsl(0, 0%, 59%);
+  --very-dark-blue-neutral: hsl(209, 33%, 12%);
+
+  --gray-footer: hsl(0, 0%, 87%);
+
+  font-size: 62.5%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+ul li {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li a {
+  border: 1px solid var(--gray-footer);
+  border-radius: 50%;
+
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: var(--gray-neutral);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--blue-primary);
+
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: var(--blue-hover);
+}
